@@ -139,7 +139,7 @@ namespace planet::argparser
 						callbackFunctions.push_back(it->second);
 					}
 
-					for (auto it : callbackFunctions) { it(""); }
+					for (auto& it : callbackFunctions) { it(""); }
 					continue;
 				}
 
